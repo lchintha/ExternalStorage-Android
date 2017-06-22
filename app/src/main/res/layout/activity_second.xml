@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chint.externalstorage.MainActivity">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/username"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:text="Internal Cache"
+        android:id="@+id/icache"
+        android:layout_marginLeft="100dp"
+        android:onClick="onIcache"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icache"
+        android:text="External Cache"
+        android:id="@+id/ecache"
+        android:layout_marginLeft="100dp"
+        android:onClick="onEcache"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="External Private"
+        android:id="@+id/eprivate"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/ecache"
+        android:onClick="onEprivate"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eprivate"
+        android:text="External Public"
+        android:id="@+id/epublic"
+        android:layout_marginLeft="100dp"
+        android:onClick="onEpublic"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        android:id="@+id/next"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/epublic"
+        android:layout_alignEnd="@+id/icache"
+        android:layout_marginEnd="16dp"
+        android:onClick="onPrevious"/>
+
+
+</RelativeLayout>
